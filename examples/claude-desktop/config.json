@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "trustatom": {
+      "command": "npx",
+      "args": ["tsx", "src/server.ts"],
+      "cwd": "/path/to/trustatom-mcp",
+      "env": {
+        "TRUSTATOM_KEY_PATH": "./keys/trustatom_keys.json"
+      }
+    }
+  }
+}
