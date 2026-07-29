@@ -1,7 +1,7 @@
 {
   "name": "@cwn/trustatom-mcp",
   "version": "1.0.0",
-  "description": "TrustAtom MCP Server — Cryptographic receipts for AI decisions. Every decision signed. Every receipt verifiable. Under 120ms.",
+  "description": "SUPERSEDED by trust-gate-mcp (https://github.com/CWNApps/trust-gate-mcp). Reference implementation only -- Ed25519-only receipts, never published to npm.",
   "main": "dist/server.js",
   "bin": {
     "trustatom-mcp": "./dist/server.js"
@@ -13,7 +13,15 @@
     "keygen": "tsx src/keygen.ts",
     "test": "tsx src/eval.ts"
   },
-  "keywords": ["mcp", "trustatom", "ai-security", "cryptographic-receipts", "ed25519", "compliance", "audit"],
+  "keywords": [
+    "mcp",
+    "trustatom",
+    "ai-security",
+    "cryptographic-receipts",
+    "ed25519",
+    "compliance",
+    "audit"
+  ],
   "author": "Cyber Warrior Network <hello@cyberwarriornetwork.com>",
   "license": "MIT",
   "dependencies": {
@@ -32,5 +40,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/CWNApps/trustatom-mcp"
-  }
+  },
+  "private": true
 }
