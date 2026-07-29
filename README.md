@@ -1,5 +1,28 @@
 # TrustAtom MCP Server
 
+> ## ⚠️ Superseded by [trust-gate-mcp](https://github.com/CWNApps/trust-gate-mcp)
+>
+> **This repository is no longer the recommended way to mint Trust Gate receipts.**
+> It is kept public as a reference implementation and for historical context.
+>
+> Use **[`trust-gate-mcp`](https://github.com/CWNApps/trust-gate-mcp)** instead:
+>
+> ```bash
+> pip install trust-gate-mcp
+> ```
+>
+> | | This repo | `trust-gate-mcp` |
+> |---|---|---|
+> | Signing | Ed25519 only | Ed25519 + ML-DSA-65 (FIPS 204), + SLH-DSA with liboqs |
+> | Tools | 4 | 7 |
+> | Receipt `env` | always `SANDBOX` | reflects real environment |
+> | Published | **no** — `@cwn/trustatom-mcp` was never released to npm | yes, on PyPI |
+> | Hosted | — | <https://trust-gate-mcp.onrender.com> |
+> | Maintained | no | yes |
+>
+> The `npx`/`npm install` instructions below therefore only work from a git clone.
+> There is no `@cwn/trustatom-mcp` package on the npm registry.
+
 **Cryptographic receipts for AI decisions. 5 minutes to your first receipt.**
 
 Every AI decision in your org is unsigned — and your auditor is going to ask about it. TrustAtom signs every decision with Ed25519 and returns a verifiable receipt in under 3ms.
